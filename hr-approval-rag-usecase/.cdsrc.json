@@ -1,0 +1,31 @@
+{
+    "cdsc": {
+        "beta": {
+            "vectorType": true
+        }
+    },
+    "requires":{
+        "GENERATIVE_AI_HUB": {
+            "CHAT_MODEL_DESTINATION_NAME": "AICoreAzureOpenAIDestination",
+            "CHAT_MODEL_DEPLOYMENT_URL": "/v2/inference/deployments/d522a138eaf4ac16",
+            "CHAT_MODEL_RESOURCE_GROUP": "default",
+            "CHAT_MODEL_API_VERSION": "2023-05-15",
+            "EMBEDDING_MODEL_DESTINATION_NAME": "AICoreAzureOpenAIDestination",
+            "EMBEDDING_MODEL_DEPLOYMENT_URL": "/v2/inference/deployments/d6d4abec97a82efa",
+            "EMBEDDING_MODEL_RESOURCE_GROUP": "default",
+            "EMBEDDING_MODEL_API_VERSION": "2023-05-15"
+        },
+        "AICoreAzureOpenAIDestination": {
+            "kind": "rest",
+            "credentials": {
+              "destinationName": "GENERATIVE_AI_HUB",
+              "requestTimeout": "300000"
+            }
+        },
+        "SUCCESS_FACTORS_CREDENTIALS": {
+            "AUTHORIZATION_HEADER": "<AUTHORIZATION_HEADER>",
+            "USER_ID": "<USER_ID>"
+        }
+    }
+
+}

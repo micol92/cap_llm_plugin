@@ -1,0 +1,8 @@
+SAP CodeJam Roadshow 2024
+Developer Advocate Rich Heilman
+Yes, someone did say “Roadshow”! Attention SAP Developers! 
+Thomas Jung and I are hitting the road again this year for another SAP CodeJam Roadshow in Europe.
+
+- ABAP Cloud & RESTful Application Programming Model 04/12/2024 Amsterdam, Netherlands
+- ABAP Cloud & RESTful Application Programming Model 04/15/2024 Bucharest, Romania
+See you all somewhere in Europe on the roadshow!

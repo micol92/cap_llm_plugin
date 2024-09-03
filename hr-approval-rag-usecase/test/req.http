@@ -1,0 +1,18 @@
+
+@server = http://localhost:4004
+@me = Authorization: Basic alice:
+
+# (send that three times to get out-of-stock message)
+POST {{server}}/odata/v4/embedding-storage/storeEmbeddings(1)
+Content-Type: application/json
+{{me}}
+
+{ }
+
+
+###
+POST {{server}}/odata/v4/catalog/insActBooks200
+Content-Type: application/json
+{{me}}
+
+{ "ID":202, "title":"206_title", "stock":500 }
