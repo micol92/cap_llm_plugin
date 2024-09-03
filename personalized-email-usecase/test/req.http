@@ -1,0 +1,11 @@
+
+@server = http://localhost:4004
+@me = Authorization: Basic alice:
+
+# (send that three times to get out-of-stock message)
+POST {{server}}/odata/v4/employee/runAnonymization
+Content-Type: application/json
+{{me}}
+
+{ "id":1002 }
+
