@@ -1,0 +1,104 @@
+{
+	"VCAP_SERVICES": {
+		"hana": [
+			{
+				"label": "hana",
+				"provider": null,
+				"plan": "hdi-shared",
+				"name": "hr-approval-rag-usecase-db",
+				"tags": [
+					"hana",
+					"database",
+					"relational"
+				],
+				"instance_guid": "ae1ad183-b770-496d-bd11-3091e2e88e57",
+				"instance_name": "hr-approval-rag-usecase-db",
+				"binding_guid": "3dd66495-3f25-4596-b6b6-61409d5a56a9",
+				"binding_name": null,
+				"credentials": {
+					"database_id": "dee0b7af-0b52-4134-a058-578d31734edb",
+					"host": "dee0b7af-0b52-4134-a058-578d31734edb.hana.prod-ap12.hanacloud.ondemand.com",
+					"port": "443",
+					"driver": "com.sap.db.jdbc.Driver",
+					"url": "jdbc:sap://dee0b7af-0b52-4134-a058-578d31734edb.hana.prod-ap12.hanacloud.ondemand.com:443?encrypt=true&validateCertificate=true&currentschema=166BE77644A144ED82654E920A46D7EF",
+					"schema": "166BE77644A144ED82654E920A46D7EF",
+					"certificate": "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\nMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\nd3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD\nQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT\nMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j\nb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB\nCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97\nnh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt\n43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P\nT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4\ngdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO\nBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR\nTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw\nDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr\nhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg\n06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF\nPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls\nYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\nCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\n-----END CERTIFICATE-----",
+					"hdi_user": "166BE77644A144ED82654E920A46D7EF_CSPUKDO11EYW9LRQXMEHKI4H5_DT",
+					"hdi_password": "Qb3Cl3QZ9KUbytgoL8O8H7Al8pjd0ZncXS_9yhlklppah0XM3kX6._.jMeq25BQNekspB164unYgPbs4tAfQEOzReaC9Hlr8jZe4aMVNG3JSzLMhfCvI0Qn98jyy8NNw",
+					"user": "166BE77644A144ED82654E920A46D7EF_CSPUKDO11EYW9LRQXMEHKI4H5_RT",
+					"password": "Io2qlKhrV_T27vmm1l-hS7WyPLecxHUi_IyW_znOGE3kBeCQ997vrSkIenOPeFjFfRpOA6KA18nL-EvD6aJId1LgfTHA77N8EqiuO0mxYRocadSXY3pwSqIIAv65rCYO"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"xsuaa": [
+			{
+				"label": "xsuaa",
+				"provider": null,
+				"plan": "application",
+				"name": "hr-approval-rag-usecase-xsuaa-service",
+				"tags": [
+					"xsuaa"
+				],
+				"instance_guid": "97d880be-d0c6-4c3e-b9ba-6598929f87fc",
+				"instance_name": "hr-approval-rag-usecase-xsuaa-service",
+				"binding_guid": "32f3891b-e6ea-4012-a95b-fea53435bd55",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "dedicated",
+					"sburl": "https://internal-xsuaa.authentication.ap12.hana.ondemand.com",
+					"subaccountid": "c0527d4c-e5f2-4ab8-84a8-a1893eab8394",
+					"credential-type": "instance-secret",
+					"clientid": "sb-hr-approval-rag-usecase!t169",
+					"xsappname": "hr-approval-rag-usecase!t169",
+					"clientsecret": "BxnVv3czUe1C7q1fWAuzDP70ddg=",
+					"serviceInstanceId": "97d880be-d0c6-4c3e-b9ba-6598929f87fc",
+					"url": "https://pockr.authentication.ap12.hana.ondemand.com",
+					"uaadomain": "authentication.ap12.hana.ondemand.com",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAinTzkio8b668Unm7pxRf\npH8vI+rAgnci1BTCtLITwPhIMOZffNqUtAGFrj9cGX1AxJ1xbXdsurL6UsIpGs07\n29xgNWnYCATKFrV3KslsuZdxCSJXdeoAFVL15nYb2EH9uMHVc5Xm5sAYaqAMv/oy\nEzrvfM+/Awedsw/gv+SS3KcrLMNn1Zki89Dbuc+30UlGXGejM09n4SpqOT/AQzsF\nu/B12x8xld3VzytRvwN9dtV8zmC+b6NIr4vcLBqAleQQnh8qJLgawGi5/Okrwayp\nVec/eYJQnyijNsSHLU4hMAYmWUOPNTWDgFXwISFCpXieQ41Xk1adp9kvJ4s4w/KB\n/QIDAQAB\n-----END PUBLIC KEY-----",
+					"apiurl": "https://api.authentication.ap12.hana.ondemand.com",
+					"identityzone": "pockr",
+					"identityzoneid": "c0527d4c-e5f2-4ab8-84a8-a1893eab8394",
+					"tenantid": "c0527d4c-e5f2-4ab8-84a8-a1893eab8394",
+					"zoneid": "c0527d4c-e5f2-4ab8-84a8-a1893eab8394"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		],
+		"destination": [
+			{
+				"label": "destination",
+				"provider": null,
+				"plan": "lite",
+				"name": "hr-approval-rag-usecase-destination-service",
+				"tags": [
+					"destination",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "de88d1a0-2f87-40c8-ba69-beb09d440acf",
+				"instance_name": "hr-approval-rag-usecase-destination-service",
+				"binding_guid": "efaf3374-228a-427b-8330-e5f16caf699f",
+				"binding_name": null,
+				"credentials": {
+					"tenantmode": "dedicated",
+					"clientid": "sb-clonede88d1a02f8740c8ba69beb09d440acf!b169|destination-xsappname!b7",
+					"credential-type": "binding-secret",
+					"xsappname": "clonede88d1a02f8740c8ba69beb09d440acf!b169|destination-xsappname!b7",
+					"clientsecret": "efaf3374-228a-427b-8330-e5f16caf699f$gvCaKZXLXgwiKCO0v2786fYvAXGTSPtcxpdIoyAkERw=",
+					"uri": "https://destination-configuration.cfapps.ap12.hana.ondemand.com",
+					"url": "https://pockr.authentication.ap12.hana.ondemand.com",
+					"uaadomain": "authentication.ap12.hana.ondemand.com",
+					"instanceid": "de88d1a0-2f87-40c8-ba69-beb09d440acf",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAinTzkio8b668Unm7pxRf\npH8vI+rAgnci1BTCtLITwPhIMOZffNqUtAGFrj9cGX1AxJ1xbXdsurL6UsIpGs07\n29xgNWnYCATKFrV3KslsuZdxCSJXdeoAFVL15nYb2EH9uMHVc5Xm5sAYaqAMv/oy\nEzrvfM+/Awedsw/gv+SS3KcrLMNn1Zki89Dbuc+30UlGXGejM09n4SpqOT/AQzsF\nu/B12x8xld3VzytRvwN9dtV8zmC+b6NIr4vcLBqAleQQnh8qJLgawGi5/Okrwayp\nVec/eYJQnyijNsSHLU4hMAYmWUOPNTWDgFXwISFCpXieQ41Xk1adp9kvJ4s4w/KB\n/QIDAQAB\n-----END PUBLIC KEY-----",
+					"identityzone": "pockr",
+					"tenantid": "c0527d4c-e5f2-4ab8-84a8-a1893eab8394"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		]
+	}
+}
